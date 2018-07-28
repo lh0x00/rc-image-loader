@@ -1,0 +1,17 @@
+/* eslint-disable no-unused-vars */
+
+type TProps = {
+  image: string,
+  placeholder?: string,
+  children: void,
+  renderComponent?: any,
+  renderError?: any,
+  renderLoading?: any,
+}
+
+type TState = {
+  src: string,
+  loading?: string,
+  isLoading: boolean,
+  isError: boolean,
+}
