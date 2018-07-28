@@ -1,4 +1,4 @@
-import { PureComponent, isValidElement, cloneElement } from 'react'
+import { PureComponent } from 'react'
 import { handleError, isString, isFunction } from 'lib/util'
 
 class ImageLoader extends PureComponent<TProps, TState> {
@@ -136,7 +136,6 @@ class ImageLoader extends PureComponent<TProps, TState> {
   }
 
   render() {
-    const { src, isLoading, isError } = this.state
     const { children } = this.props
 
     const shouldRenderProps = !children
