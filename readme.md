@@ -27,6 +27,8 @@ $ yarn add rc-image-loader
 
 # usage
 
+[online example](https://codesandbox.io/s/q8vkmqx4vq)
+
 #### child function
 
 ```javascript
