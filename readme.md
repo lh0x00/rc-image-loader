@@ -6,14 +6,6 @@
 
 handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. when use package in server-side, image source return is real-image for best seo.
 
-### require
-
-```json
-{
-  "react": "^15.0.0",
-  "react-dom": "^15.0.0"
-}
-```
 
 # install
 
