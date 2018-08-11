@@ -4,13 +4,17 @@ import { handleError, isString, isFunction } from 'lib/util'
 class ImageLoader extends PureComponent<TProps, TState> {
   image: any = null // eslint-disable-line react/sort-comp
 
-  state = {
-    src: null,
-    isLoading: false,
-    isError: false,
+  constructor(props) {
+    super(props)
+    const { image: src } = props
+    this.state = {
+      src,
+      isLoading: false,
+      isError: false,
+    }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { image, placeholder } = this.props
     this.handleLoadImage(image, placeholder)
   }
@@ -139,7 +143,6 @@ class ImageLoader extends PureComponent<TProps, TState> {
     const { children } = this.props
 
     const shouldRenderProps = !children
-
     if (shouldRenderProps) return this.renderProps()
 
     return this.renderChildren()

@@ -4,7 +4,7 @@
 [![npm downloads][npm-downloads-image]][npm-url]
 [![github issues][github-issues-image]][github-issues-url]
 
-handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded.
+handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. when use package in server-side, image source return is real-image for best seo.
 
 ### require
 
