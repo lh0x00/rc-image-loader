@@ -10,7 +10,8 @@
     "lint": "eslint --config .eslintrc . --ignore-path .gitignore --fix",
     "flow": "flow",
     "check": "npm run lint && npm run flow",
-    "pre": "npm run clean && npm run build && npm run check"
+    "test": "jest",
+    "pre": "npm run clean && npm run build && npm run check && npm run test"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.4.2",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
@@ -38,6 +40,8 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-flowtype": "^2.48.0",
@@ -46,10 +50,11 @@
     "eslint-plugin-react": "^7.8.2",
     "flow": "^0.2.3",
     "flow-bin": "^0.73.0",
+    "jest": "^23.5.0",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }
