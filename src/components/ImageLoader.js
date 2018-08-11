@@ -37,16 +37,14 @@ class ImageLoader extends PureComponent<TProps, TState> {
       handleError('src must be a string')
       return false
     }
-
     this.clearImageLoader()
     this.setState({
       src: placeholder || image,
       loading: image,
       isLoading: true,
       isError: false,
-    }, () => {
-      this.createImageLoader(image)
     })
+    this.createImageLoader(image)
 
     return true
   }
@@ -61,7 +59,8 @@ class ImageLoader extends PureComponent<TProps, TState> {
     }
     this.setState({
       src, loading: null, isLoading: false, isError: false,
-    }, () => this.onCallback('onLoad'))
+    })
+    this.onCallback('onLoad')
     return true
   }
 
@@ -78,7 +77,8 @@ class ImageLoader extends PureComponent<TProps, TState> {
 
   handleOnError = () => {
     const state = { isLoading: false, isError: true }
-    this.setState(state, () => this.onCallback('onError'))
+    this.setState(state)
+    this.onCallback('onError')
   }
 
   createImageLoader = (src: string) => {
@@ -90,10 +90,10 @@ class ImageLoader extends PureComponent<TProps, TState> {
   }
 
   clearImageLoader = () => {
-    if (this.image) {
-      this.image.onload = null
-      this.image.onerror = null
-    }
+    if (!this.image) return true
+    this.image.onload = null
+    this.image.onerror = null
+    return true
   }
 
   renderChildren = () => {
