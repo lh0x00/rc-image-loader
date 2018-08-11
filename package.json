@@ -1,6 +1,6 @@
 {
   "name": "rc-image-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. support server-side render for seo!",
   "main": "dist/index.js",
   "scripts": {
