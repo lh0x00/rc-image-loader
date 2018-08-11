@@ -7,6 +7,7 @@
   "env": {
     "browser": true,
     "es6": true,
+    "jest": true,
     "node": true
   },
   "rules": {
@@ -31,8 +32,15 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["src", "node_modules"],
-        "extensions": [".js", ".jsx"]
+        "paths": [
+          "src",
+          "node_modules",
+          "test"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     }
   }
