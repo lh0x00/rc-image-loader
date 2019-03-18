@@ -3,8 +3,7 @@
 [![npm version][npm-version-image]][npm-url]
 [![npm downloads][npm-downloads-image]][npm-url]
 [![github issues][github-issues-image]][github-issues-url]
-[![build status][travis-image]][npm-url]
-[![greenkeeper status][greenkeeper-image]][npm-url]
+[![build status][travis-image]][travis-url]
 
 handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. when use package in server-side, image source return is real-image for best seo.
 
@@ -108,4 +107,4 @@ values return to your components, append to props
 [github-issues-image]: https://img.shields.io/github/issues/lamhieu-vk/rc-image-loader.svg
 [github-issues-url]: https://github.com/lamhieu-vk/rc-image-loader/issues
 [travis-image]: https://travis-ci.com/lamhieu-vk/rc-image-loader.svg?branch=master
-[greenkeeper-image]: https://badges.greenkeeper.io/lamhieu-vk/rc-image-loader.svg
+[travis-url]: https://travis-ci.com/lamhieu-vk/rc-image-loader?branch=master

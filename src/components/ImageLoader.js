@@ -49,7 +49,10 @@ class ImageLoader extends PureComponent<TProps, TState> {
     return true
   }
 
-  shouldLoadImage = (prevImage: string, nextImage: string): boolean => prevImage !== nextImage
+  shouldLoadImage = (
+    prevImage: string,
+    nextImage: string,
+  ): boolean => prevImage !== nextImage
 
   handleOnLoad = () => {
     const src = this.image && this.image.src
