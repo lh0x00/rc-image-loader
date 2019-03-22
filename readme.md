@@ -1,14 +1,14 @@
-# about
+# About
 
 [![npm version][npm-version-image]][npm-url]
 [![npm downloads][npm-downloads-image]][npm-url]
 [![github issues][github-issues-image]][github-issues-url]
 [![build status][travis-image]][travis-url]
 
-handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. when use package in server-side, image source return is real-image for best seo.
+Handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. when use package in server-side, image source return is real-image for best seo.
 
 
-# install
+# Installation
 
 ```bash
 # use npm
@@ -18,11 +18,23 @@ $ npm install rc-image-loader
 $ yarn add rc-image-loader
 ```
 
-# usage
+## CDN
+
+```html
+// unpkg
+<script src="https://unpkg.com/rc-image-loader/dist/rc-image-loader.js"></script>
+
+// jsdelivr
+<script src="https://cdn.jsdelivr.net/npm/rc-image-loader/dist/rc-image-loader.js"></script>
+```
+
+**Note** use CDN in browser, you can call `rcImageLoader` from Window API. it is available at `window.rcImageLoader`
+
+# Usage
 
 [online example](https://codesandbox.io/s/q8vkmqx4vq)
 
-#### child function
+## Child function
 
 ```javascript
 import React from "react";
@@ -49,7 +61,7 @@ const App = () => (
 export default App;
 ```
 
-#### render props
+## Render props
 
 ```javascript
 import React from "react";
@@ -76,9 +88,9 @@ const App = () => (
 export default App;
 ```
 
-# documents
+# Documents
 
-## config
+## Config
 
 | name           | type    | description                                                                                                            |
 | -------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -90,7 +102,7 @@ export default App;
 | onLoaded       | Func    | (optional) function callback when loaded image. default: undefined                                                     |
 | onError        | Func    | (optional) function callback when failed load image. default: undefined                                                |
 
-## props
+## Props
 
 values return to your components, append to props
 

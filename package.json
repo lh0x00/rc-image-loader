@@ -1,6 +1,7 @@
 {
   "name": "rc-image-loader",
-  "version": "2.0.0",
+  "globalName": "rcImageLoader",
+  "version": "2.1.0",
   "description": "handle render a preview image is tiny while waiting for real image loading. the real image is lazy-loaded when loaded. support server-side render for seo!",
   "main": "dist/rc-image-loader.cjs.js",
   "module": "dist/rc-image-loader.esm.js",
@@ -59,6 +60,7 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-replace": "^2.1.1",
     "rollup-plugin-uglify": "^6.0.2",
     "standard-version": "^5.0.2"
   },
